@@ -31,7 +31,7 @@ function trackYanwen(trackingNumber, refresh) {
       let statusText = statusMatch[1].trim().slice(0, -2);
       return statusText;
     } else {
-      return "Status not found. The tracking page may use JavaScript to load this data, or the date format has changed.";
+      return "Status not found. The date format may have changed.";
     }    
   } catch (error) {
     return `Error fetching tracking data: ${error.message}`;
