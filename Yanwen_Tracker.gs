@@ -1,4 +1,4 @@
-function trackYanwen(trackingNumber) {
+function trackYanwen(trackingNumber, refresh) {
   if (!trackingNumber || trackingNumber.toString().trim() === "") {
     return "Error: Tracking number is required.";
   }
